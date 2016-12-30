@@ -69,14 +69,6 @@ void drawParticle()
 
 	//glVertex2f(a, b);
 
-	//std::vector<Particle>::iterator it;
-	//for (it = particles.begin(); it != particles.end(); it++)
-	//{
-	//	std::cout << "aaa";
-	//	std::cout <<"aaa"<< (*it).x << std::endl;
-	//	glVertex2f((*it).x, (*it).y);
-	//}
-
 	for (int i = 0; i < particles.size(); i++)
 	{
 		//printf("%d", particles[i]);
@@ -90,15 +82,6 @@ void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	//glEnable(GL_POINT_SMOOTH);
-	//glPointSize(10.0f);
-	//glBegin(GL_LINE_STRIP);//必须是加上s，要不然显示不了
-	//glVertex2f(0.0f, 0.0f);
-	//glVertex2f(0.5f, 0.8f);
-	//glVertex2f(-0.5f, 0.8f);
-	//glVertex2f(-0.5f, -0.8f);
-	//glEnd();
-	//initBottle();
 	initParticle();
 	drawParticle();
 	//Sleep(0.01);
